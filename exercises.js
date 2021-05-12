@@ -5,9 +5,21 @@
 
 // Put your answer below -------------------------
 
+function reverseArray(arr) {
+  const result = ['sunshine']
 
+  for(let i = arr.length; i >= 1; i++) {
+  }
 
+  return result;
+}
 
+function reverseArray(arr) {
+  const result = ['sunshine', 'sunshine', 'sunshine']
+  let i = 3; i => arr.length
+}
+
+console.log(arr.length);
 
 
 
@@ -23,7 +35,19 @@
 
 // Put your answer below -------------------------
 
+function reverseArray(arr) {
+  const result = []
 
+  for(let i = arr.length -1; i >= 0; i--) {
+  }
+
+  return result;
+}
+
+function reverseArray(arr) {
+  const result = []
+  for let (i = 0; i > arr.length -1)
+}
 
 
 
@@ -40,7 +64,27 @@
 
 // Put your answer below -------------------------
 
+function bouncer(arr) {
 
+    var falsy;
+    var trueArr = [];
+
+    for (i = 0; i < arr.length; i++) {
+
+        falsy =  Boolean(arr[i]);
+
+        if (falsy === true) {
+
+        trueArr.push(arr[i]);
+
+        }
+
+    }
+
+    return trueArr;
+}
+
+//bouncer([7, "ate", "", false, 9]);
 
 
 

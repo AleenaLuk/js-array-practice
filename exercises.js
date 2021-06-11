@@ -5,23 +5,14 @@
 
 // Put your answer below -------------------------
 
-function reverseArray(arr) {
-  const result = ['sunshine']
-
-  for(let i = arr.length; i >= 1; i++) {
+function myFunction(str,taylorInt) {
+  let newArray = [];
+  for(let i = 0; i < taylorInt; i++) {
+    newArray.push(str);
   }
-
-  return result;
+  console.log("#1 newArray",newArray)
 }
-
-function reverseArray(arr) {
-  const result = ['sunshine', 'sunshine', 'sunshine']
-  let i = 3; i => arr.length
-}
-
-console.log(arr.length);
-
-
+myFunction("funny", 3);
 
 
 
@@ -36,18 +27,12 @@ console.log(arr.length);
 // Put your answer below -------------------------
 
 function reverseArray(arr) {
-  const result = []
-
-  for(let i = arr.length -1; i >= 0; i--) {
-  }
-
-  return result;
+  const reversed = [...arr].reverse();
+  console.log("#2 reversed",reversed, "originalArr", originalArr)
+  return reversed;
 }
-
-function reverseArray(arr) {
-  const result = []
-  for let (i = 0; i > arr.length -1)
-}
+const originalArr = ["cat","dog","mouse"]
+reverseArray(originalArr)
 
 
 
@@ -64,29 +49,16 @@ function reverseArray(arr) {
 
 // Put your answer below -------------------------
 
-function bouncer(arr) {
-
-    var falsy;
-    var trueArr = [];
-
-    for (i = 0; i < arr.length; i++) {
-
-        falsy =  Boolean(arr[i]);
-
-        if (falsy === true) {
-
-        trueArr.push(arr[i]);
-
-        }
-
-    }
-
-    return trueArr;
+function removeFalse(anArray) {
+  var myFilterArray = anArray.filter(Boolean);
+// let myFilterArray = anArray.map(function(element){
+//   return element != 0;
+// });
+  console.log("#3 myFilterArray", myFilterArray)
+  return myFilterArray
 }
-
-//bouncer([7, "ate", "", false, 9]);
-
-
+let coolArray = ["aleena", 0, null, "bird", 12, false ]
+removeFalse(coolArray)
 
 
 
@@ -103,7 +75,17 @@ function bouncer(arr) {
 
 // Put your answer below -------------------------
 
+const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]]
 
+function toObj(mas){
+    let obj = {}
+    mas.forEach((item) => {
+        obj[item[0]] = item[1]
+    })
+    return obj
+}
+
+console.log(toObj(myArray))
 
 
 
@@ -121,7 +103,13 @@ function bouncer(arr) {
 
 // Put your answer below -------------------------
 
+var arr = ["banana", "apple", "orange", "lemon", "apple", "lemon"];
 
+function removeDuplicates(data) {
+    return data.filter((value, index) => data.indexOf(value) === index);
+}
+
+console.log(removeDuplicates(arr))
 
 
 
@@ -142,8 +130,27 @@ function bouncer(arr) {
 
 // Put your answer below -------------------------
 
+let masOne = [1, 2, 3, 4],
+    masTwo = [1, 3, 2, 4];
+
+function isSame(mas1, mas2){
+    mas1.sort()
+    mas2.sort()
+    if (mas1.length !== mas2.length){
+        return false
+    }
+    else {
+        mas1.forEach((item, i) =>{
+            if (item !== mas2[i]){
+                return false
+            }
+        })
+        return true
+    }
+}
 
 
+console.log(isSame(masOne, masTwo))
 
 
 
